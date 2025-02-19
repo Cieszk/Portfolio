@@ -1,4 +1,4 @@
-package pl.cieszk.portfolio.response;
+package pl.cieszk.portfolio.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class TechnologyResponse {
-    private Long id;
+public class TechnologyRequest {
     private String name;
     private String iconUrl;
 }
