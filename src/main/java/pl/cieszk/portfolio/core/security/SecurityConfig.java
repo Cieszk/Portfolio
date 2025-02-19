@@ -13,7 +13,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import pl.cieszk.portfolio.features.auth.CustomUserDetailService;
+import pl.cieszk.portfolio.service.CustomUserDetailService;
 
 @EnableWebSecurity
 @RequiredArgsConstructor

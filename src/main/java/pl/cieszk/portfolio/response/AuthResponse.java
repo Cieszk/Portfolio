@@ -1,4 +1,4 @@
-package pl.cieszk.portfolio.features.auth.dto;
+package pl.cieszk.portfolio.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

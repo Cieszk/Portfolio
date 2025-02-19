@@ -1,4 +1,4 @@
-package pl.cieszk.portfolio.features.auth.model;
+package pl.cieszk.portfolio.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package pl.cieszk.portfolio.features.auth;
+package pl.cieszk.portfolio.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pl.cieszk.portfolio.core.security.JwtUtil;
-import pl.cieszk.portfolio.features.auth.dto.AuthRequest;
-import pl.cieszk.portfolio.features.auth.dto.AuthResponse;
+import pl.cieszk.portfolio.request.AuthRequest;
+import pl.cieszk.portfolio.response.AuthResponse;
 
 @RestController
 @RequiredArgsConstructor
