@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
-import pl.cieszk.portfolio.repository.UserRepository;
-import pl.cieszk.portfolio.model.User;
+import pl.cieszk.portfolio.features.auth.UserRepository;
+import pl.cieszk.portfolio.features.auth.domain.User;
 
 @Component
 public class AdminInitializer implements CommandLineRunner {
