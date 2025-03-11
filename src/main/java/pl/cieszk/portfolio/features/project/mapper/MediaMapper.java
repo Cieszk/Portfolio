@@ -12,7 +12,6 @@ import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface MediaMapper {
-    MediaMapper INSTANCE = Mappers.getMapper(MediaMapper.class);
     MediaResponse toResponse(Media media);
     @Mapping(target = "project", ignore = true)
     Media toEntity(MediaRequest mediaRequest);

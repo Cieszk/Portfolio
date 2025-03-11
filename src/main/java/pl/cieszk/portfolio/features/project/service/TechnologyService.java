@@ -43,6 +43,11 @@ public class TechnologyService {
                 .orElseThrow(() -> new EntityNotFoundException("Technology with given name not found"));
     }
 
+    public Technology getTechnologyEntityById(Long id) {
+        return technologyRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Technology with given name not found"));
+    }
+
     public TechnologyResponse updateTechnology(Long id, TechnologyRequest technologyRequest) {
         Technology technology = technologyRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Technology with given id not found"));
