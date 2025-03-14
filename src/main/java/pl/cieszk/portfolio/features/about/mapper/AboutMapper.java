@@ -12,5 +12,5 @@ public interface AboutMapper {
 
     AboutResponse toResponse(About about);
 
-    void updateEntityFromRequest(AboutRequest aboutRequest,@MappingTarget About about);
+    void updateEntityFromRequest(AboutRequest aboutRequest, @MappingTarget About about);
 }
