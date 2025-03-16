@@ -40,7 +40,7 @@ public class ProjectService {
     }
 
     public List<ProjectResponse> getAllProjects() {
-        return projectMapper.toResponseList(projectRepository.findAll());
+        return projectMapper.toResponseList(projectRepository.findAllWithRelationships());
     }
 
     public ProjectResponse getProject(Long id) {

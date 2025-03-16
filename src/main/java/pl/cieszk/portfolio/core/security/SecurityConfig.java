@@ -27,9 +27,12 @@ public class SecurityConfig  {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers("/api/admin/**").authenticated()
-                        .requestMatchers("/api/projects/**").authenticated()
-                        .requestMatchers("/api/media/**").authenticated()
-                        .requestMatchers("/api/technologies/**").authenticated())
+                        .requestMatchers("/api/projects/**").permitAll()
+                        .requestMatchers("/api/media/**").permitAll()
+                        .requestMatchers("/api/technologies/**").permitAll()
+                        .requestMatchers("/api/experience/**").permitAll()
+                        .requestMatchers("/api/education/**").permitAll()
+                        .requestMatchers("/api/about/**").permitAll())
                 .userDetailsService(userDetailsService)
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
         http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
